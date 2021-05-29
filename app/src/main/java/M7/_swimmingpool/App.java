@@ -11,4 +11,33 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
     }
+
+    public int calcualteprice(int time, String weekday, int age, boolean group, boolean member ) throws Exception {
+        float  price = 200;
+        boolean unreasonable_age = (age<3 || age>75) ? true : false;
+        boolean unreasonable_time = (time<5 || time>22) ? true : false;
+        
+        if(unreasonable_age || unreasonable_time)
+            throw new Exception();
+        
+        if(weekday.equalsIgnoreCase("Saturday") || weekday.equalsIgnoreCase("sunday")) {
+            price = 250;
+        }
+        else {
+            if(member == false){
+                if(group == true) {
+                    price *= 0.7;
+                }
+                else if(age<12 || age>=60 || time<7){
+                    price *= 0.8;
+                }
+            }
+        }
+        
+        if(member == true) {
+            price *= 0.55;
+        }
+        
+        return (int)price;
+    }
 }
