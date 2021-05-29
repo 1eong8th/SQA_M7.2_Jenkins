@@ -35,7 +35,7 @@ public class App {
         }
         
         if(member == true) {
-            price *= 0.55;
+            price *= 0.5;
         }
         
         return (int)price;
