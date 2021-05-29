@@ -28,9 +28,9 @@ public class App {
                 if(group == true) {
                     price *= 0.7;
                 }
-                else if(age<12 || age>=60 || time<7){
-                    price *= 0.8;
-                }
+                //else if(age<12 || age>=60 || time<7){
+                //    price *= 0.8;
+                //}
             }
         }
         
