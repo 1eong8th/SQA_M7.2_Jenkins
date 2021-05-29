@@ -88,7 +88,7 @@ class AppTest {
         assertEquals(200,person.calcualteprice(10, "friday", 40, false, false));
         
     }
-    /*@Test
+    @Test
     void testCalcualteprice10() throws Exception {
         person = new App();
         assertEquals(140,person.calcualteprice(6, "friday", 40, true, false));
@@ -106,5 +106,5 @@ class AppTest {
         person = new App();
         assertEquals(160,person.calcualteprice(5, "friday", 40, false, false));
         
-    }*/
+    }
 }
