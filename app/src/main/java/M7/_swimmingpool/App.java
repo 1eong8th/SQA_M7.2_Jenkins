@@ -7,7 +7,7 @@ public class App {
     
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
     }
 
     public int calcualteprice(int time, String weekday, int age, boolean group, boolean member ) throws Exception {
